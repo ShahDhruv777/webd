@@ -5,13 +5,19 @@
     src: url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
     font-weight: bold;
 }
-
+*{
+    margin:0px;
+    padding:0px;
+}
 .page{
     /* initialise flex box and justify content row */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    min-height: 100vh;
+    height: 100%; width: 100%
 
+   
 }
 
 .upper_page{
@@ -22,7 +28,8 @@
     /* set backgground colour */
     background-color:#1F4482;
     align-items: center;
-    ;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -46,22 +53,26 @@
 }
 
 .Algo_text{
+    display: flex;
     font-family: 'Rubik';
     color:#FFFFFF;
     font-size: 36px;
 }
 
 .content_text{
+    display: flex;
     font-family: 'DM Sans';
     font-style: normal;
     color:#FFFFFF;
     font-size: 24px;
+    
 }
 
 .form{
+    padding-top:40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .input_box{
@@ -75,8 +86,8 @@
     background-color: #FFFFFF;
     font-size: 20px;
     border-radius: 8px;
-    width: 344px;
-    height: 64px;
+    /* width: 344px;
+    height: 48px; */
 }
 
 .register_button{
@@ -89,8 +100,8 @@
     align-items: center;
     text-align: center;
     color:#FFFFFF;
-    width: 216px;
-    height: 64px;
+    /* width: 216px;
+    height: 48px; */
 
 }
 
@@ -100,9 +111,9 @@
     font-style: normal;
     font-size: 16px;
     align-items: center;
-    text-align: center;
+    text-align: right;
     width: 344px;
-height: 61px;
+    height: 61px;
 
     color: #FFFFFF;
 }
@@ -115,7 +126,7 @@ height: 61px;
     font-style: normal;
     
     font-size: 20px;
-    
+    height: 100%;
     /* or 32px */
 
 
